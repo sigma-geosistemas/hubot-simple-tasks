@@ -1,15 +1,15 @@
 // Description:
 // Create and mark tasks to do, done, etc.
 // Commands:
-// * hubot task me <task> - creates a new task for you;
-// * hubot task @user <task> - creates a new task for @user;
-// * hubot task list - list all the pending tasks for you;
-// * hubot task list done - list all the done tasks for you;
-// * hubot task list @user - list all the pending tasks for @user;
-// * hubot task list done @user - list all the done tasks for @user;
-// * hubot task did <taskIndex> - mark task at <taskIndex> as done;
-// * hubot task did all - mark all tasks as done;
-// * hubot task clear - delete all done tasks for you;
+// hubot task me <task> - creates a new task for you;
+// hubot task @user <task> - creates a new task for @user;
+// hubot task list - list all the pending tasks for you;
+// hubot task list done - list all the done tasks for you;
+// hubot task list @user - list all the pending tasks for @user;
+// hubot task list done @user - list all the done tasks for @user;
+// hubot task did <taskIndex> - mark task at <taskIndex> as done;
+// hubot task did all - mark all tasks as done;
+// hubot task clear - delete all done tasks for you;
 // Dependencies:
 // hubot-redis-brain
 /*jslint node: true*/
