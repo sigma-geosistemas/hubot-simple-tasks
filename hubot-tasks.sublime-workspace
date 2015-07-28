@@ -1,0 +1,765 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"hu",
+				"hubot-brain"
+			],
+			[
+				"exe",
+				"expect"
+			],
+			[
+				"Control",
+				"ControlConstructor"
+			],
+			[
+				"con",
+				"ControlConstructor"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"Ver",
+				"VersionInfo"
+			],
+			[
+				"App",
+				"AtlasApplication"
+			],
+			[
+				"layer",
+				"layerKey"
+			],
+			[
+				"La",
+				"LayerFactory"
+			],
+			[
+				"atlas",
+				"atlas-backbone"
+			],
+			[
+				"to",
+				"toggleText"
+			],
+			[
+				"ex",
+				"extraContext"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"Base",
+				"BaseModalView"
+			],
+			[
+				"inner",
+				"innerView"
+			],
+			[
+				"modal",
+				"modalRegion"
+			],
+			[
+				"on",
+				"onClickAbout"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"Conten",
+				"ContentTemplate"
+			],
+			[
+				"Rig",
+				"RightPanelView"
+			],
+			[
+				"onClick",
+				"onClickRight"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"paddn",
+				"padding-top"
+			],
+			[
+				"backl",
+				"background-color"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"get",
+				"getPanel"
+			],
+			[
+				"sco",
+				"scotchPanelOptions"
+			],
+			[
+				"Conte",
+				"ContentTemplate"
+			],
+			[
+				"atl",
+				"atlas-backbone"
+			],
+			[
+				"Atlas",
+				"AtlasEventManager"
+			],
+			[
+				"right",
+				"rightPanelRegion"
+			],
+			[
+				"A",
+				"AtlasEventManager"
+			],
+			[
+				"la",
+				"layerSwitcher"
+			],
+			[
+				"layers",
+				"layerSwitcherOptions"
+			],
+			[
+				"MapCo",
+				"MapConfigurationManager"
+			],
+			[
+				"Go",
+				"GoogleConstructor"
+			],
+			[
+				"google",
+				"GoogleConstructor"
+			],
+			[
+				"tool",
+				"toolbarView"
+			],
+			[
+				"Atl",
+				"AtlasApplication"
+			],
+			[
+				"Mea",
+				"MeasureType"
+			],
+			[
+				"Me",
+				"MeasureType"
+			],
+			[
+				"distance",
+				"distanceMeters"
+			],
+			[
+				"onPull",
+				"onPullError"
+			],
+			[
+				"su",
+				"success"
+			],
+			[
+				"gene",
+				"generateUniqueId"
+			],
+			[
+				"onPush",
+				"onPushError"
+			],
+			[
+				"onpush",
+				"onPushSuccess"
+			],
+			[
+				"suc",
+				"onPushSuccess"
+			],
+			[
+				"forma",
+				"formatLocation"
+			],
+			[
+				"loca",
+				"locations"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "scripts/tasks.js",
+			"settings":
+			{
+				"buffer_size": 1681,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 521,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"trai",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"trail",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"tra",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lore",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"snippet",
+				"Snippet: Prototype"
+			],
+			[
+				"sn",
+				"Bookmarks: Select Next"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"new",
+				"Build: New Build System"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"nex",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"javs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"side",
+				"Side Bar: Refresh"
+			],
+			[
+				"the",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"theme",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"i",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"them",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"insl",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 476.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/george/projetos/sigma/hubot-tasks"
+	],
+	"file_history":
+	[
+		"/home/george/projetos/sigma/hubot-tasks/index.coffee",
+		"/home/george/projetos/sigma/atlas-backbone/tests/SpecRunner.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/carto/LayerConstructor.js",
+		"/home/george/projetos/sigma/atlas-backbone/tests/specs/controls/ControlConstructor.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/templates/Atlas/About.html",
+		"/home/george/projetos/sigma/atlas-backbone/src/assets/css/bootstrap-social-icons.css",
+		"/home/george/projetos/sigma/atlas-backbone/src/index.html",
+		"/home/george/projetos/sigma/atlas-backbone/src/assets/css/images.css",
+		"/home/george/projetos/sigma/atlas-backbone/src/assets/css/main.css",
+		"/home/george/projetos/sigma/atlas-backbone/src/assets/css/bootstrap-ios-buttons.css",
+		"/home/george/projetos/sigma/atlas-backbone/tests/specs/app/AtlasApplication.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/views/Atlas/AboutView.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/core/VersionInfo.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/views/Atlas/ToolbarView.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/templates/Atlas/Toolbar.html",
+		"/home/george/projetos/sigma/atlas-backbone/src/assets/css/bootstrap-round-buttons.css",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/app/AtlasApplication.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/map/MapConfigurationManager.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/vendor/bootstrap/dist/css/bootstrap.css",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/map/MapController.js",
+		"/home/george/projetos/sigma/atlas-backbone/tests/specs/map/MapController.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/carto/LayerFactory.js",
+		"/home/george/projetos/sigma/atlas-backbone/tests/specs/collections/GeoCollection.js",
+		"/home/george/projetos/sigma/atlas-backbone/tests/specs/map/MapConfigurationManager.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/views/Base/BaseModalView.js",
+		"/home/george/projetos/sigma/atlas-backbone/tests/specs/views/Atlas/ToolbarView.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/views/Atlas/MainLayoutView.js",
+		"/home/george/Downloads/documents-export-2015-07-09/Credenciados.",
+		"/home/george/Downloads/documents-export-2015-07-09/Credenciados.dbf",
+		"/home/george/projetos/sigma/atlas-backbone/src/vendor/bootstrap/js/tooltip.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/templates/Atlas/AboutTemplate.html",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/regions/PanelRegion.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/regions/ModalRegion.js",
+		"/home/george/projetos/sigma/atlas-backbone/tests/specs/symbology/ModelSymbolManager.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/symbology/DefaultSymbols.js",
+		"/home/george/projetos/sigma/atlas-backbone/atlas-backbone.sublime-project",
+		"/home/george/.config/sublime-text-3/Packages/User/snippets/javascript/require-module-snippet.sublime-snippet",
+		"/home/george/.config/sublime-text-3/Packages/User/snippets/javascript/expect-test-snippet.sublime-snippet",
+		"/home/george/.config/sublime-text-3/Packages/User/rmod.sublime-snippet",
+		"/home/george/.config/sublime-text-3/Packages/User/require-module-snippet.sublime-snippet",
+		"/home/george/.config/sublime-text-3/Packages/User/expect-test-snippet.sublime-snippet",
+		"/home/george/projetos/sigma/sigma-snippets/sublime3/expect-test-snippet.sublime-snippet",
+		"/home/george/projetos/sigma/sigma-snippets/sublime3/require-module-snippet.sublime-snippet",
+		"/home/george/.config/sublime-text-3/Packages/DocBlockr/Base File.sublime-settings",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/templates/Atlas/MainLayout.html",
+		"/home/george/projetos/sigma/atlas-backbone/src/assets/images",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/templates/Atlas/Content.html",
+		"/home/george/projetos/sigma/atlas-backbone/src/main.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/views/Base/BasePanelView.js",
+		"/home/george/Desktop/1.html",
+		"/home/george/Desktop/1.css",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/views/Panels/LeftPanel.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/views/Panels/RightPanel.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/views/Atlas/MapContentView.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/vendor/scotch-panels/dist/scotchPanels.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/views/Atlas/ContentView.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/carto/LayerContainer.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/templates/Atlas/MapContent.html",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/carto/Google.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/carto/MapBox.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/controls/ControlFactory.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/controls/ControlContainer.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/templates/Atlas/MapContentTemplate.html",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/map/OptionsManager.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/events/AtlasEventManager.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/locations/LocationManager.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/locations/LocationService.js",
+		"/home/george/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/measures/Distance.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/measures/Measure.js",
+		"/home/george/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/controls/ControlManager.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/core/DateTime.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/core/Util.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/measures/MeasureType.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/features/LeafletFeatureBuilder.js",
+		"/home/george/projetos/sigma/atlas-backbone/src/atlas-backbone/features/FeatureBuilder.js",
+		"/home/george/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/george/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/george/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
+		"/home/george/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+		"/home/george/Desktop/teste.js"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 120.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"it(\"should not create the layerSwitcher\", function(){\n				mc = new MapController({\n					layerContainer: layerContainer\n				});\n				expect(mc.layerSwitcher).to.be.undefined;\n			});",
+			"L.map",
+			"<a href=\"\" class=\"navbar-brand pull-right logo-brand\">\n					<img src=\"assets/images/logo.png\" class=\"logo-brand pull-left\" alt=\"\">\n				</a>",
+			">\n",
+			"<li>\n						<a href=\"javascript:void(0)\" id=\"about-button\">\n							<i class=\"fa fa-question\"></i>\n						</a>\n					</li>",
+			"containerSelector",
+			"baseLayers",
+			"layerContainer.hasO",
+			"Util.setOptions",
+			"sprintf",
+			"sprintf-js",
+			"springf-js",
+			"carto/Util",
+			"atlas:application",
+			"	AtlasEventManager.on(\"atlas:locationManager:enabled\", function(locationManager){\n\n		console.log(\"locationManager enabled\");\n\n	});",
+			"formatLocation",
+			"arra",
+			"array",
+			"tag"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"serialize"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "scripts/tasks.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1681,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								793,
+								793
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 95.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 521,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								450,
+								450
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 552.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "hubot-tasks.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"index",
+				"src/index.html"
+			],
+			[
+				"about.",
+				"src/atlas-backbone/templates/Atlas/About.html"
+			],
+			[
+				"about",
+				"src/atlas-backbone/templates/Atlas/About.html"
+			],
+			[
+				"bootrstrap",
+				"src/vendor/bootstrap/dist/css/bootstrap.css"
+			],
+			[
+				"main.",
+				"src/assets/css/main.css"
+			],
+			[
+				"toolva",
+				"src/atlas-backbone/views/Atlas/ToolbarView.js"
+			],
+			[
+				"oolbar",
+				"src/atlas-backbone/templates/Atlas/Toolbar.html"
+			],
+			[
+				"toolbar",
+				"src/atlas-backbone/views/Atlas/ToolbarView.js"
+			],
+			[
+				"layerfac",
+				"src/atlas-backbone/carto/LayerFactory.js"
+			],
+			[
+				"manager",
+				"src/atlas-backbone/map/MapConfigurationManager.js"
+			],
+			[
+				"mapcon",
+				"src/atlas-backbone/map/MapController.js"
+			],
+			[
+				"specs/mapmapc",
+				"tests/specs/map/MapController.js"
+			],
+			[
+				"spec",
+				"tests/SpecRunner.js"
+			],
+			[
+				"tool",
+				"src/atlas-backbone/templates/Atlas/Toolbar.html"
+			],
+			[
+				"layout",
+				"src/atlas-backbone/views/Atlas/MainLayoutView.js"
+			],
+			[
+				"basemodal",
+				"src/atlas-backbone/views/Base/BaseModalView.js"
+			],
+			[
+				"toolbarv",
+				"src/atlas-backbone/views/Atlas/ToolbarView.js"
+			],
+			[
+				"bootstrap-r",
+				"src/assets/css/bootstrap-round-buttons.css"
+			],
+			[
+				"abou",
+				"src/atlas-backbone/templates/Atlas/About.html"
+			],
+			[
+				"main.css",
+				"src/assets/css/main.css"
+			],
+			[
+				"main",
+				"src/main.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 455.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
