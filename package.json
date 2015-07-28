@@ -1,18 +1,19 @@
 {
-    "name": "hubot-tasks",
+    "name": "hubot-simple-tasks",
     "version": "0.0.1",
     "description": "Hubot script to create tasks in hubot-brain",
     "preferGlobal": "false",
     "main": "index.js",
     "scripts": {},
     "author": "George Rodrigues da Cunha Silva",
-    "keywords": ["hubot", "hubot-brain", "tasks", "todo", "to-do"],
+    "keywords": ["hubot", "hubot-redis-brain", "tasks", "todo", "to-do", "sigma-geosistemas"],
     "repository" : {
         "type": "git",
         "url": "https://github.com/sigma-geosistemas/hubot-tasks.git"
     },
     "dependencies": {
-        "hubot-brain": "0.0.1"
+        "hubot": "^2.13.2",
+        "hubot-redis-brain": "0.0.3"
     },
     "engines": { "node": "*" }
 }
