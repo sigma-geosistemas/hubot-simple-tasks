@@ -1,15 +1,17 @@
 // Description:
 // Create and mark tasks to do, done, etc.
 // Commands:
-// hubot task me <task> - creates a new task for you
-// hubot tasks - lists all your pending pending tasks
-// hubot tasks <user> - lists all pending tasks for an user
-// hubot tasks done - lists all done tasks for you
-// hubot tasks <user> done - lists all done tasks for user
-// hubot task <task> done - marks task as done
-// hubot task help - shows help
+// * hubot task me <task> - creates a new task for you;
+// * hubot task @user <task> - creates a new task for @user;
+// * hubot task list - list all the pending tasks for you;
+// * hubot task list done - list all the done tasks for you;
+// * hubot task list @user - list all the pending tasks for @user;
+// * hubot task list done @user - list all the done tasks for @user;
+// * hubot task did <taskIndex> - mark task at <taskIndex> as done;
+// * hubot task did all - mark all tasks as done;
+// * hubot task clear - delete all done tasks for you;
 // Dependencies:
-// hubot-brain
+// hubot-redis-brain
 /*jslint node: true*/
 module.exports = function(robot) {
 
@@ -23,7 +25,7 @@ module.exports = function(robot) {
 
 		var tasks = getTasks();
 		if (!tasks.hasOwnProperty(userName)) {
-			res.send("New task list for you!");
+			res.send("New task list for " + userName + "!");
 			tasks[userName] = {
 				pending: [],
 				done: []
@@ -66,6 +68,23 @@ module.exports = function(robot) {
 		else {
 			return tasks.pending;
 		}
+	}
+
+	function getUser(userName) {
+
+		// removing the @ from username
+		userName = userName.substring(1);
+
+		var users = robot.brain.usersForFuzzyName(userName);
+		
+		if (users.length <= 0) {
+			return null;
+		}
+		if (users.length > 1) {
+			return null;
+		}
+
+		return users[0].name;
 	}
 
 	robot.respond(/task did (\d+)$/i, function(res){
@@ -113,8 +132,14 @@ module.exports = function(robot) {
 	});
 
 	robot.respond(/task list (\@\w+)/i, function(res){
-		// TODO: tratar nome de usuario
-		var user = res.match[1];
+		
+		var userName = res.match[1].trim();
+		var user = getUser(userName);
+
+		if (user === null || user === undefined) {
+			return res.send("No user with name " + userName + "!");
+		}
+
 		var userTasks = listTasks(user, false);
 		if (userTasks === null) {
 			return res.send("No task for " + user +"!");
@@ -130,6 +155,7 @@ module.exports = function(robot) {
 
 	// list your done tasks
 	robot.respond(/task list done$/i, function(res){
+		
 		var user = res.message.user.name;
 
 		var userTasks = listTasks(user, true);
@@ -147,7 +173,14 @@ module.exports = function(robot) {
 
 	// lists done tasks for a certain user
 	robot.respond(/task list done (\@\w+)/i, function(res) {
-		var user = res.match[1];
+
+		var userName = res.match[1].trim();
+		var user = getUser(userName);
+
+		if (user === null || user === undefined) {
+			return res.send("No user with name " + userName + "!");
+		}
+
 		var userTasks = listTasks(user, false);
 		if (userTasks === null) {
 			return res.send("No task for " + user +"!");
@@ -212,7 +245,13 @@ module.exports = function(robot) {
 
 	// creates a new task for the user
 	robot.respond(/task (\@\w+) (.+)/i, function(res){
-		var user = res.match[1];
+		var userName = res.match[1].trim();
+		var user = getUser(userName);
+
+		if (user === null || user === undefined) {
+			return res.send("No user with name " + userName + "!");
+		}
+
 		var task = res.match[2];
 		createTask(res, user, task);
 	});
