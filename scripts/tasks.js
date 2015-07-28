@@ -123,6 +123,9 @@ module.exports = function(robot) {
 			return res.send("No task for you!");
 		}
 
+		res.send("------------------------------");
+		res.send("Tasks for " + user);
+
 		for (var i = 0; i <= userTasks.length -1; i++) {
 			var task = userTasks[i];
 			res.send("Task #" + i + ": " + task);
@@ -145,6 +148,9 @@ module.exports = function(robot) {
 			return res.send("No task for " + user +"!");
 		}
 
+		res.send("------------------------------");
+		res.send("Tasks for " + user);
+
 		for (var i = 0; i <= userTasks.length -1; i++) {
 			var task = userTasks[i];
 			res.send("Task #" + i + ": " + task);
@@ -162,6 +168,9 @@ module.exports = function(robot) {
 		if (userTasks === null) {
 			return res.send("You haven't completed anything you lazy boy!");
 		}
+
+		res.send("------------------------------");
+		res.send("Tasks done by " + user);
 
 		for (var i = 0; i <= userTasks.length -1; i++) {
 			var task = userTasks[i];
@@ -181,10 +190,13 @@ module.exports = function(robot) {
 			return res.send("No user with name " + userName + "!");
 		}
 
-		var userTasks = listTasks(user, false);
+		var userTasks = listTasks(user, true);
 		if (userTasks === null) {
 			return res.send("No task for " + user +"!");
 		}
+		
+		res.send("------------------------------");
+		res.send("Tasks done by " + user);
 
 		for (var i = 0; i <= userTasks.length -1; i++) {
 			var task = userTasks[i];
