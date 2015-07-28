@@ -172,7 +172,7 @@ module.exports = function(robot) {
 		var i = 0;
 
 		while (userTasks.pending.length > 0) {
-			var task = userTasks.pending.pop();
+			var task = userTasks.pending.shift();
 			userTasks.done.push(task);
 			i += 1;
 		}
@@ -193,7 +193,7 @@ module.exports = function(robot) {
 		var i = 0;
 
 		while (userTasks.done.length > 0) {
-			var task = userTasks.done.pop();
+			var task = userTasks.done.shift();
 			res.send("Deleting: " + task);
 			i += 1;
 		}
@@ -215,10 +215,5 @@ module.exports = function(robot) {
 		var user = res.match[1];
 		var task = res.match[2];
 		createTask(res, user, task);
-	});
-
-	// shows help
-	robot.respond(/task help$/i, function(res){
-		return res.send("help");
 	});
 };
