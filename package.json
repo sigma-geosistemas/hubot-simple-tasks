@@ -1,6 +1,6 @@
 {
   "name": "hubot-simple-tasks",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Hubot script to create tasks in hubot-brain",
   "preferGlobal": "false",
   "main": "index.js",
