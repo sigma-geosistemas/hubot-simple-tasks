@@ -87,6 +87,21 @@ module.exports = function(robot) {
 		return users[0].name;
 	}
 
+	function createTaskListText(user, tasks, done) {
+
+		var taskText = "\n------------------------------\n";
+		taskText += "Tasks for user " + user + "\n";
+		for (var i = 0; i <= tasks.length -1; i++) {
+			taskText += "#" + i + ": " + tasks[i] + "\n";
+		}
+		taskText += "------------------------------\n";
+
+		var summary = done ? "done" : "pending";
+
+		taskText += tasks.length + " " + summary + " " + "tasks";
+		return taskText;
+	}
+
 	robot.respond(/task did (\d+)$/i, function(res){
 
 		var user = res.message.user.name;
@@ -124,15 +139,9 @@ module.exports = function(robot) {
 			return res.reply("No task for you!");
 		}
 
-		res.reply("------------------------------");
-		res.reply("Tasks for " + user);
-
-		for (var i = 0; i <= userTasks.length -1; i++) {
-			var task = userTasks[i];
-			res.reply("Task #" + i + ": " + task);
-		}
-		res.reply("------------------------------");
-		res.reply("Total pending: " + userTasks.length);
+		var taskText = createTaskListText(user, userTasks, false);
+		
+		res.reply(taskText);
 	});
 
 	robot.respond(/task list (\@\w+)/i, function(res){
@@ -146,18 +155,11 @@ module.exports = function(robot) {
 
 		var userTasks = listTasks(user, false);
 		if (userTasks === null) {
-			return res.reply("No task for " + user +"!");
+			return res.reply("No task for " + user + "!");
 		}
 
-		res.reply("------------------------------");
-		res.reply("Tasks for " + user);
-
-		for (var i = 0; i <= userTasks.length -1; i++) {
-			var task = userTasks[i];
-			res.reply("Task #" + i + ": " + task);
-		}
-		res.reply("------------------------------");
-		res.reply("Total pending: " + userTasks.length);
+		var taskText = createTaskListText(user, userTasks, false);
+		res.reply(taskText);
 	});
 
 	// list your done tasks
@@ -170,15 +172,8 @@ module.exports = function(robot) {
 			return res.reply("You haven't completed anything you lazy boy!");
 		}
 
-		res.reply("------------------------------");
-		res.reply("Tasks done by " + user);
-
-		for (var i = 0; i <= userTasks.length -1; i++) {
-			var task = userTasks[i];
-			res.reply("Task #" + i + ": " + task);
-		}
-		res.reply("------------------------------");
-		res.reply("Total done: " + userTasks.length);
+		var taskText = createTaskListText(user, userTasks, true);
+		res.reply(taskText);
 	});
 
 	// lists done tasks for a certain user
@@ -195,16 +190,9 @@ module.exports = function(robot) {
 		if (userTasks === null) {
 			return res.reply("No task for " + user +"!");
 		}
-		
-		res.reply("------------------------------");
-		res.reply("Tasks done by " + user);
 
-		for (var i = 0; i <= userTasks.length -1; i++) {
-			var task = userTasks[i];
-			res.reply("Task #" + i + ": " + task);
-		}
-		res.reply("------------------------------");
-		res.reply("Total done: " + userTasks.length);
+		var taskText = createTaskListText(user, userTasks, true);
+		res.reply(taskText);
 	});
 
 	// marks of your tasks as done
@@ -240,7 +228,6 @@ module.exports = function(robot) {
 
 		while (userTasks.done.length > 0) {
 			var task = userTasks.done.shift();
-			res.reply("Deleting: " + task);
 			i += 1;
 		}
 
