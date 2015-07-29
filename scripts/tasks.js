@@ -25,7 +25,7 @@ module.exports = function(robot) {
 
 		var tasks = getTasks();
 		if (!tasks.hasOwnProperty(userName)) {
-			res.send("New task list for " + userName + "!");
+			res.reply("New task list for " + userName + "!");
 			tasks[userName] = {
 				pending: [],
 				done: []
@@ -33,7 +33,7 @@ module.exports = function(robot) {
 		}
 
 		tasks[userName].pending.push(task);
-		res.send("Don't forget to: " + task + " " + userName);
+		res.reply("Don't forget to: " + task + " " + userName);
 		updateBrain(tasks);
 	}
 
@@ -98,18 +98,19 @@ module.exports = function(robot) {
 		var taskIndex = Number(res.match[1]);
 
 		if (taskIndex > pendingTasks.length) {
-			return res.send("You don't have that much work. Your tasks go just to #" + pendingTasks.length);
+			return res.reply("You don't have that much work. Your tasks go just to #" + pendingTasks.length);
 		}
 
 		var task = pendingTasks[taskIndex];
 
 		if (task === undefined) {
-			return res.send("There is no such thing! Choose a valid index for your task!");
+			return res.reply("There is no such thing! Choose a valid index for your task!");
 		}
 
 		pendingTasks.splice(taskIndex, 1);
 		userTasks.done.push(task);
 		tasks[user] = userTasks;
+		res.reply("Uhul, another task done!");
 		updateBrain(tasks);
 	});
 
@@ -120,18 +121,18 @@ module.exports = function(robot) {
 
 		var userTasks = listTasks(user, false);
 		if (userTasks === null) {
-			return res.send("No task for you!");
+			return res.reply("No task for you!");
 		}
 
-		res.send("------------------------------");
-		res.send("Tasks for " + user);
+		res.reply("------------------------------");
+		res.reply("Tasks for " + user);
 
 		for (var i = 0; i <= userTasks.length -1; i++) {
 			var task = userTasks[i];
-			res.send("Task #" + i + ": " + task);
+			res.reply("Task #" + i + ": " + task);
 		}
-		res.send("------------------------------");
-		res.send("Total pending: " + userTasks.length);
+		res.reply("------------------------------");
+		res.reply("Total pending: " + userTasks.length);
 	});
 
 	robot.respond(/task list (\@\w+)/i, function(res){
@@ -140,23 +141,23 @@ module.exports = function(robot) {
 		var user = getUser(userName);
 
 		if (user === null || user === undefined) {
-			return res.send("No user with name " + userName + "!");
+			return res.reply("No user with name " + userName + "!");
 		}
 
 		var userTasks = listTasks(user, false);
 		if (userTasks === null) {
-			return res.send("No task for " + user +"!");
+			return res.reply("No task for " + user +"!");
 		}
 
-		res.send("------------------------------");
-		res.send("Tasks for " + user);
+		res.reply("------------------------------");
+		res.reply("Tasks for " + user);
 
 		for (var i = 0; i <= userTasks.length -1; i++) {
 			var task = userTasks[i];
-			res.send("Task #" + i + ": " + task);
+			res.reply("Task #" + i + ": " + task);
 		}
-		res.send("------------------------------");
-		res.send("Total pending: " + userTasks.length);
+		res.reply("------------------------------");
+		res.reply("Total pending: " + userTasks.length);
 	});
 
 	// list your done tasks
@@ -166,18 +167,18 @@ module.exports = function(robot) {
 
 		var userTasks = listTasks(user, true);
 		if (userTasks === null) {
-			return res.send("You haven't completed anything you lazy boy!");
+			return res.reply("You haven't completed anything you lazy boy!");
 		}
 
-		res.send("------------------------------");
-		res.send("Tasks done by " + user);
+		res.reply("------------------------------");
+		res.reply("Tasks done by " + user);
 
 		for (var i = 0; i <= userTasks.length -1; i++) {
 			var task = userTasks[i];
-			res.send("Task #" + i + ": " + task);
+			res.reply("Task #" + i + ": " + task);
 		}
-		res.send("------------------------------");
-		res.send("Total done: " + userTasks.length);
+		res.reply("------------------------------");
+		res.reply("Total done: " + userTasks.length);
 	});
 
 	// lists done tasks for a certain user
@@ -187,23 +188,23 @@ module.exports = function(robot) {
 		var user = getUser(userName);
 
 		if (user === null || user === undefined) {
-			return res.send("No user with name " + userName + "!");
+			return res.reply("No user with name " + userName + "!");
 		}
 
 		var userTasks = listTasks(user, true);
 		if (userTasks === null) {
-			return res.send("No task for " + user +"!");
+			return res.reply("No task for " + user +"!");
 		}
 		
-		res.send("------------------------------");
-		res.send("Tasks done by " + user);
+		res.reply("------------------------------");
+		res.reply("Tasks done by " + user);
 
 		for (var i = 0; i <= userTasks.length -1; i++) {
 			var task = userTasks[i];
-			res.send("Task #" + i + ": " + task);
+			res.reply("Task #" + i + ": " + task);
 		}
-		res.send("------------------------------");
-		res.send("Total done: " + userTasks.length);
+		res.reply("------------------------------");
+		res.reply("Total done: " + userTasks.length);
 	});
 
 	// marks of your tasks as done
@@ -225,7 +226,7 @@ module.exports = function(robot) {
 		tasks[user] = userTasks;
 		updateBrain(tasks);
 
-		return res.send(i + " tasks marked as completed.");
+		return res.reply(i + " tasks marked as completed.");
 	});
 
 	// delete all done tasks
@@ -239,13 +240,13 @@ module.exports = function(robot) {
 
 		while (userTasks.done.length > 0) {
 			var task = userTasks.done.shift();
-			res.send("Deleting: " + task);
+			res.reply("Deleting: " + task);
 			i += 1;
 		}
 
 		tasks[user] = userTasks;
 		updateBrain(tasks);
-		return res.send(i + " tasks deleted.");
+		return res.reply(i + " tasks deleted.");
 	});
 
 	// creates a new task for you
@@ -261,7 +262,7 @@ module.exports = function(robot) {
 		var user = getUser(userName);
 
 		if (user === null || user === undefined) {
-			return res.send("No user with name " + userName + "!");
+			return res.reply("No user with name " + userName + "!");
 		}
 
 		var task = res.match[2];
